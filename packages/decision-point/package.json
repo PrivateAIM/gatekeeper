@@ -19,7 +19,7 @@
         "@privateaim/policy-kit": "^0.0.0",
         "@privateaim/core-http-kit": "^0.8.0",
         "@privateaim/server-kit": "^0.8.0",
-        "@privateaim/server-http-kit": "^0.8.0",
+        "@privateaim/server-http-kit": "^0.8.1",
         "@routup/basic": "^1.4.0",
         "@routup/decorators": "^3.4.0",
         "@validup/adapter-routup": "^0.1.4",
