@@ -28,7 +28,7 @@
     "keywords": [],
     "devDependencies": {
         "@rollup/plugin-node-resolve": "^15.2.3",
-        "@rollup/plugin-swc": "^0.3.1",
+        "@rollup/plugin-swc": "^0.4.0",
         "@swc/jest": "^0.2.36",
         "@tada5hi/commitlint-config": "^1.2.1",
         "@tada5hi/eslint-config-typescript": "^1.2.11",
