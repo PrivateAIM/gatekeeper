@@ -17,7 +17,7 @@
         "@ebec/http": "^2.3.0",
         "@privateaim/kit": "^0.8.0",
         "@privateaim/policy-kit": "^0.0.0",
-        "@privateaim/core-http-kit": "^0.8.0",
+        "@privateaim/core-http-kit": "^0.8.3",
         "@privateaim/server-kit": "^0.8.0",
         "@privateaim/server-http-kit": "^0.8.0",
         "@routup/basic": "^1.4.0",
