@@ -1,8 +1,9 @@
 {
     "extends": "../../tsconfig.json",
     "compilerOptions": {
+        "strict": true,
         "paths": {
-            "@privateaim/policy-kit": ["./packages/kit/src"]
+            "@privateaim/gatekeeper-kit": ["./packages/kit/src"]
         }
     }
 }

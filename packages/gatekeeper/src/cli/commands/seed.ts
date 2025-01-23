@@ -6,8 +6,8 @@
  */
 
 import type { Permission, Policy } from '@authup/core-kit';
-import type { AttributesPolicy } from '@authup/kit';
-import { BuiltInPolicyType } from '@authup/kit';
+import type { AttributesPolicy } from '@authup/access';
+import { BuiltInPolicyType } from '@authup/access';
 import type { AnalysisPermission } from '@privateaim/core-kit';
 import { useAuthupClient, useLogger } from '@privateaim/server-kit';
 import type { CAC } from 'cac';
@@ -30,7 +30,6 @@ export function mountCLISeedCommand(cli: CAC) {
             const analysis = await coreClient.analysis.getOne(id);
 
             const options : AttributesPolicy = {
-                type: BuiltInPolicyType.ATTRIBUTES,
                 query: {
                     endpoint: {
                         $eq: 'http://kong/valid',
@@ -48,6 +47,7 @@ export function mountCLISeedCommand(cli: CAC) {
                 if (isClientErrorWithStatusCode(e, 404)) {
                     policy = await authupClient.policy.create({
                         name: PERMISSION_NAME,
+                        type: BuiltInPolicyType.ATTRIBUTES,
                         ...options,
                     });
                 } else {

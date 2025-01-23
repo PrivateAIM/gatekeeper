@@ -7,12 +7,12 @@
 
 import type { TokenCreatorOptions } from '@authup/core-http-kit';
 import { mountClientResponseErrorTokenHook } from '@authup/core-http-kit';
-import type { ConnectionString } from '@authup/core-kit';
-import { parseConnectionString } from '@authup/core-kit';
 import {
     AuthupClient,
     setAuthupClientFactory,
 } from '@privateaim/server-kit';
+import type { ConnectionString } from '../../utils';
+import { parseConnectionString } from '../../utils';
 import { useEnv } from '../env';
 
 export function useAuthupConnectionOptions() : ConnectionString {

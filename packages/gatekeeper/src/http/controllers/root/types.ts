@@ -5,7 +5,7 @@
  * view the LICENSE file that was distributed with this source code.
  */
 
-import type { PolicyEvaluationContext } from '@authup/kit';
+import type { PolicyEvaluateContext } from '@authup/access';
 
 export type EvaluationExecutionRequestPayload = {
     permission_name?: string,
@@ -13,5 +13,5 @@ export type EvaluationExecutionRequestPayload = {
 
     analysis_id: string,
 
-    data: PolicyEvaluationContext
+    data: PolicyEvaluateContext
 };

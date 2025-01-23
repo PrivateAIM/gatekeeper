@@ -1,10 +1,10 @@
-# Policy 🛡️
+# Gatekeeper 🛡️
 
 [![Master Workflow][workflow-src]][workflow-href]
 [![Known Vulnerabilities][snyk-src]][snyk-href]
 [![Conventional Commits][conventional-src]][conventional-href]
 
-This repository contains policy related packages.
+This repository contains packages related to evaluation permission & policies.
 
 **Table of Contents**
 - [Contributing](#contributing)

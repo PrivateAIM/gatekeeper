@@ -6,7 +6,7 @@
  */
 
 import { isClientErrorWithStatusCode } from 'hapic';
-import { PolicyEngine } from '@privateaim/policy-kit';
+import { PolicyEngine } from '@privateaim/gatekeeper-kit';
 import { BadRequestError } from '@ebec/http';
 import { useAuthupClient } from '@privateaim/server-kit';
 import { Response, sendAccepted } from 'routup';
@@ -69,7 +69,7 @@ export class RootController {
         if (analysisPermission.policy_id) {
             const policy = await authupClient.policy.getOne(analysisPermission.policy_id);
 
-            const output = this.policyEngine.evaluate(policy, input.data);
+            const output = this.policyEngine.evaluate({ spec: policy, data: input.data });
             if (!output) {
                 throw new BadRequestError('The permission cannot be used by the analysis.');
             }

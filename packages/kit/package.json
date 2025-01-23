@@ -1,5 +1,5 @@
 {
-    "name": "@privateaim/policy-kit",
+    "name": "@privateaim/gatekeeper-kit",
     "version": "0.0.0",
     "private": true,
     "author": {
@@ -21,7 +21,8 @@
     "license": "Apache-2.0",
     "description": "",
     "dependencies": {
-        "@authup/kit": "^1.0.0-beta.19"
+        "@authup/access": "^1.0.0-beta.24",
+        "@authup/kit": "^1.0.0-beta.24"
     },
     "scripts": {
         "build:types": "tsc --emitDeclarationOnly -p tsconfig.build.json",
