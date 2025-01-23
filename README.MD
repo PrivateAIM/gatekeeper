@@ -4,7 +4,7 @@
 [![Known Vulnerabilities][snyk-src]][snyk-href]
 [![Conventional Commits][conventional-src]][conventional-href]
 
-This repository contains packages related to evaluation permission & policies.
+This repository contains packages related to evaluating permission & policies.
 
 **Table of Contents**
 - [Contributing](#contributing)
