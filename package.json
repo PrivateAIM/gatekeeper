@@ -44,6 +44,9 @@
         "ts-node": "^10.9.2",
         "typescript": "^5.7.3"
     },
+    "overrides": {
+        "flatted": "3.4.2"
+    },
     "lint-staged": {
         ".js": "npm run lint:fix",
         "*.ts": "npm run lint:fix"
