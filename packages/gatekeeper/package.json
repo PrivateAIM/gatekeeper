@@ -31,7 +31,7 @@
         "express-validator": "^7.2.1",
         "hapic": "^2.5.2",
         "locter": "^2.1.0",
-        "mysql2": "^3.12.0",
+        "mysql2": "^3.23.1",
         "redis-extension": "^2.0.1",
         "routup": "^4.0.0",
         "singa": "^1.0.0",
