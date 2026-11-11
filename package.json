@@ -47,5 +47,8 @@
     "lint-staged": {
         ".js": "npm run lint:fix",
         "*.ts": "npm run lint:fix"
+    },
+    "overrides": {
+        "lodash": "4.18.0"
     }
 }
