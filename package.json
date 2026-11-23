@@ -44,6 +44,9 @@
         "ts-node": "^10.9.2",
         "typescript": "^5.7.3"
     },
+    "overrides": {
+        "@babel/core": "7.29.6"
+    },
     "lint-staged": {
         ".js": "npm run lint:fix",
         "*.ts": "npm run lint:fix"
